@@ -7,9 +7,9 @@ Hands-on PyTorch + Google Colab notebooks for **2-D patch-based lesion segmentat
 
 | # | Notebook | Description | Open in Colab |
 |---|----------|-------------|---------------|
-| 1 | `notebooks/01_psma_demo.ipynb` | PSMA demo: train U-Net, eval, task-based comparison | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ZekunLi-Zeke/snmmi-ai-hands-on-segmentation/blob/main/notebooks/01_psma_demo.ipynb) |
-| 2 | `notebooks/02_fdg_practice.ipynb` | FDG practice: guided TODOs | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ZekunLi-Zeke/snmmi-ai-hands-on-segmentation/blob/main/notebooks/02_fdg_practice.ipynb) |
-| 2★ | `solutions/02_fdg_practice_solution.ipynb` | FDG practice – complete solution | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ZekunLi-Zeke/snmmi-ai-hands-on-segmentation/blob/main/solutions/02_fdg_practice_solution.ipynb) |
+| 1 | `notebooks/01_psma_demo.ipynb` | PSMA demo: train U-Net, eval, task-based comparison | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ZekunLi-Zeke/snmmi-ai-hands-on-segmentation-pub/blob/main/notebooks/01_psma_demo.ipynb) |
+| 2 | `notebooks/02_fdg_practice.ipynb` | FDG practice: guided TODOs | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ZekunLi-Zeke/snmmi-ai-hands-on-segmentation-pub/blob/main/notebooks/02_fdg_practice.ipynb) |
+| 2★ | `solutions/02_fdg_practice_solution.ipynb` | FDG practice – complete solution | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ZekunLi-Zeke/snmmi-ai-hands-on-segmentation-pub/blob/main/solutions/02_fdg_practice_solution.ipynb) |
 
 ## Getting Started
 
