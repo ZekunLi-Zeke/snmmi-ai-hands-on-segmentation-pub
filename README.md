@@ -1,4 +1,4 @@
-# SNMMI AI Certificate – 2-D Patch-Based PET/CT Lesion Segmentation Hands-On
+# SNMMI AI Certificate – 2-D Patch-Based PET Lesion Segmentation Hands-On
 
 Hands-on PyTorch + Google Colab notebooks for **2-D patch-based lesion segmentation** on PET data (PSMA demo, FDG practice) for the [SNMMI AI Certificate](https://www.snmmi.org/) program.
 
@@ -7,16 +7,16 @@ Hands-on PyTorch + Google Colab notebooks for **2-D patch-based lesion segmentat
 
 | # | Notebook | Description | Open in Colab |
 |---|----------|-------------|---------------|
-| 1 | `notebooks/01_psma_demo.ipynb` | PSMA demo: train U-Net, eval, task-based comparison | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ZekunLi-Zeke/snmmi-ai-hands-on-segmentation-pub/blob/main/notebooks/01_psma_demo.ipynb) |
-| 2 | `notebooks/02_fdg_practice.ipynb` | FDG practice: guided TODOs | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ZekunLi-Zeke/snmmi-ai-hands-on-segmentation-pub/blob/main/notebooks/02_fdg_practice.ipynb) |
-| 2★ | `solutions/02_fdg_practice_solution.ipynb` | FDG practice – complete solution | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ZekunLi-Zeke/snmmi-ai-hands-on-segmentation-pub/blob/main/solutions/02_fdg_practice_solution.ipynb) |
+| 1 | `notebooks/01_psma_demo.ipynb` | PSMA demo: train U-Net, eval, task-based comparison | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ZekunLi-Zeke/snmmi-ai-hands-on-segmentation/blob/main/notebooks/01_psma_demo.ipynb) |
+| 2 | `notebooks/02_fdg_practice.ipynb` | FDG practice: guided TODOs | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ZekunLi-Zeke/snmmi-ai-hands-on-segmentation/blob/main/notebooks/02_fdg_practice.ipynb) |
+| 2★ | `solutions/02_fdg_practice_solution.ipynb` | FDG practice – complete solution | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ZekunLi-Zeke/snmmi-ai-hands-on-segmentation/blob/main/solutions/02_fdg_practice_solution.ipynb) |
 
 ## Getting Started
 
 ### Option A – Google Colab (recommended)
 
 Click one of the **Open in Colab** badges above. Each notebook:
-- installs its own dependencies inline (no `requirements.txt` path needed),
+- installs its own dependencies inline,
 - downloads the dataset from GitHub Releases automatically,
 - runs top-to-bottom without any edits.
 
@@ -25,7 +25,7 @@ Click one of the **Open in Colab** badges above. Each notebook:
 ```bash
 git clone https://github.com/ZekunLi-Zeke/snmmi-ai-hands-on-segmentation.git
 cd snmmi-ai-hands-on-segmentation
-pip install -r requirements.txt
+pip install torch torchvision numpy matplotlib tqdm scikit-learn
 jupyter notebook
 ```
 
@@ -41,7 +41,6 @@ snmmi-ai-hands-on-segmentation/
 ├── .github/
 │   └── instructions/
 │       └── notebooks.instructions.md
-├── requirements.txt
 ├── LICENSE
 └── README.md
 ```
@@ -50,7 +49,7 @@ snmmi-ai-hands-on-segmentation/
 
 ## Data & Citation
 
-Sample data are **2-D 64×64 lesion-containing PET/CT patches** derived from:
+Sample data are **2-D 32×32 lesion-containing PET patches** derived from:
 
 > Gatidis, S., Kuestner, T., Ingrisch, M., Hepp, T., Frueh, M., Nikolaou, K.,
 > La Fougere, C., Pfannenberg, C., Fabritius, M., Jeblick, K., Schachtner, B.,
@@ -72,7 +71,7 @@ This repository's own code and instructional materials are released under the [L
 
 | Problem | Solution |
 |---------|----------|
-| **No GPU available** | The notebooks run on CPU too; training 3 epochs on 64×64 patches takes ~2–5 min on CPU. |
+| **No GPU available** | The notebooks run on CPU too; training 128 epochs on 32×32 patches takes a few minutes on CPU. |
 | **Slow runtime** | Reduce `BATCH_SIZE` or `EPOCHS` in the Setup cell. |
 | **Download fails** | Check that `DATA_URL` in the download cell points to a valid GitHub Release asset URL. |
 | **`assert` error on `.npz` files** | Re-run the download cell; the zip may not have extracted correctly. Delete `/tmp/*.zip` and retry. |
