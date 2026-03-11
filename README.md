@@ -23,8 +23,8 @@ Click one of the **Open in Colab** badges above. Each notebook:
 ### Option B – Local setup
 
 ```bash
-git clone https://github.com/ZekunLi-Zeke/snmmi-ai-hands-on-segmentation.git
-cd snmmi-ai-hands-on-segmentation
+git clone https://github.com/ZekunLi-Zeke/snmmi-ai-hands-on-segmentation-pub.git
+cd snmmi-ai-hands-on-segmentation-pub
 pip install torch torchvision numpy matplotlib tqdm scikit-learn
 jupyter notebook
 ```
@@ -32,7 +32,7 @@ jupyter notebook
 ## Repository Layout
 
 ```
-snmmi-ai-hands-on-segmentation/
+snmmi-ai-hands-on-segmentation-pub/
 ├── notebooks/
 │   ├── 01_psma_demo.ipynb          # PSMA demo (fully worked)
 │   └── 02_fdg_practice.ipynb       # FDG practice (learner TODOs)
@@ -63,7 +63,7 @@ Please cite the original dataset when using or redistributing these patch subset
 
 - License: **CC BY-NC 4.0** – non-commercial use only.
 - Redistributed patch subsets inherit the original dataset license and must be used for non-commercial purposes only.
-- Dataset assets are distributed via [GitHub Releases](https://github.com/ZekunLi-Zeke/snmmi-ai-hands-on-segmentation/releases) (not committed to this repository).
+- Dataset assets are distributed via [GitHub Releases](https://github.com/ZekunLi-Zeke/snmmi-ai-hands-on-segmentation-pub/releases) (not committed to this repository).
 
 This repository's own code and instructional materials are released under the [LICENSE](LICENSE) found at the repository root.
 
